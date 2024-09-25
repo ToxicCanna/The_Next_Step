@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0b29aad07d8c8f643bd5592a534258d1
+guid: c296d50977bcd2d42a0a0c04b636b620
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 12
+  spritePixelsToUnits: 8
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Level1EnemyVarient2_0
+      name: MiniBoss_IdleSpriteSheet_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 7
-        width: 6
-        height: 7
+        y: 12
+        width: 8
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 594739c0185734849836ba481eb6daa6
-      internalID: 74749284
+      spriteID: 0ac2ef6447523ad4f8ba778f08500684
+      internalID: 709237583
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Level1EnemyVarient2_1
+      name: MiniBoss_IdleSpriteSheet_1
       rect:
         serializedVersion: 2
-        x: 6
-        y: 7
-        width: 6
-        height: 7
+        x: 8
+        y: 12
+        width: 8
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 65e1798d33534ed44b564afa0a61f691
-      internalID: 1143853497
+      spriteID: c1ad8e7773794594795d008dca1bf39f
+      internalID: -1269484220
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Level1EnemyVarient2_2
+      name: MiniBoss_IdleSpriteSheet_2
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 6
-        height: 7
+        width: 8
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,8 +166,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: efaf47d0baaf973418279f8928f4b10d
-      internalID: 1445915210
+      spriteID: 4f91665aac95f5a4a8fce68244322e2b
+      internalID: -2100375064
       vertices: []
       indices: 
       edges: []
@@ -183,9 +183,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Level1EnemyVarient2_0: 74749284
-      Level1EnemyVarient2_1: 1143853497
-      Level1EnemyVarient2_2: 1445915210
+      MiniBoss_IdleSpriteSheet_0: 709237583
+      MiniBoss_IdleSpriteSheet_1: -1269484220
+      MiniBoss_IdleSpriteSheet_2: -2100375064
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

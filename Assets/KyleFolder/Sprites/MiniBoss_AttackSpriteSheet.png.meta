@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 14fad8678026f5f4382601b29221b674
+guid: 4711e95d971534b438679596e4686e17
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 12
+  spritePixelsToUnits: 8
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Level1MiniBoss_0
+      name: MiniBoss_AttackSpriteSheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f03e37ae1318c4f4790510f59b6ad726
-      internalID: -1844141696
+      spriteID: 51b8ab06d99b3214d9bda29baa817826
+      internalID: 717580327
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Level1MiniBoss_1
+      name: MiniBoss_AttackSpriteSheet_1
       rect:
         serializedVersion: 2
         x: 8
@@ -145,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b12ec20685008bd49ba9033359fa2306
-      internalID: -1485973521
+      spriteID: 27958c5f45174cd47a87ca255fc008ab
+      internalID: -923018664
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Level1MiniBoss_2
+      name: MiniBoss_AttackSpriteSheet_2
       rect:
         serializedVersion: 2
         x: 0
@@ -166,8 +166,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a7dd3722914a963408e13b6f503f9d56
-      internalID: 1056399846
+      spriteID: 0cdc371855e4e2d4b8ed2ea89603dd65
+      internalID: -1293654085
       vertices: []
       indices: 
       edges: []
@@ -183,9 +183,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Level1MiniBoss_0: -1844141696
-      Level1MiniBoss_1: -1485973521
-      Level1MiniBoss_2: 1056399846
+      MiniBoss_AttackSpriteSheet_0: 717580327
+      MiniBoss_AttackSpriteSheet_1: -923018664
+      MiniBoss_AttackSpriteSheet_2: -1293654085
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

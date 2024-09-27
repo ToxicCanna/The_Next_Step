@@ -4,23 +4,28 @@ using UnityEngine;
 
 public class MiniEnemy : MonoBehaviour, IEnemy
 {
-    [SerializeField] private Transform[] spawnPoints;
-    [SerializeField] private Transform Player;
+    private Transform[] spawnPoints;
+    private Transform player;
+    [SerializeField] private EnemyObject EnemyObject;
 
-    private Vector2 EnemyTarget;
-    public EnemyObject EnemyObject;
-
+    [SerializeField] private float randomSpeed;
+    public void Initialize(Transform[] spawnPoints, Transform player)
+    {
+        this.spawnPoints = spawnPoints;
+        this.player = player;
+        
+    }
     private void Start()
     {
-        EnemyTarget = Player.position;
+       
     }
 
     private void Update()
     {
         Move();
 
-        //to check if the player is in the scene or left from the bottom 
-        if(transform.position.y < Screen.height)
+         
+        if (IsOffScreen())
         {
             Respawn();
         }
@@ -28,10 +33,12 @@ public class MiniEnemy : MonoBehaviour, IEnemy
 
     public void Move()
     {
-        transform.position = Vector2.MoveTowards(transform.position, EnemyTarget, EnemyObject.MoveSpeed * Time.deltaTime);
+        if (player != null)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, player.position, EnemyObject.MoveSpeed * Time.deltaTime);
+        }
     }
-
-    public void Respawn()
+        public void Respawn()
     {
         int SpawnRandom = Random.Range(0, spawnPoints.Length);
         transform.position = spawnPoints[SpawnRandom].position;
@@ -40,5 +47,14 @@ public class MiniEnemy : MonoBehaviour, IEnemy
     public void DestroyEnemy()
     {
         Destroy(gameObject);
+        SpawnManager.Instance.EnemyDestroyed();
+    }
+
+    private bool IsOffScreen()
+    {
+        //to check if the player is in the scene or left from the bottom
+        Vector3 viewportPosition = Camera.main.WorldToViewportPoint(transform.position);
+
+        return viewportPosition.y < 0;
     }
 }

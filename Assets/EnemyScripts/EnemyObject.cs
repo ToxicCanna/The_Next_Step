@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Enemy", fileName = "Enemy")]
-public class EnemyObject : MonoBehaviour
+public class EnemyObject : ScriptableObject
 {
-    public float MoveSpeed;
-    public float Health;
+    [SerializeField] private float maxMoveSpeed;
+    [SerializeField] private float Health;
+    [SerializeField] private GameObject enemyType;
 }

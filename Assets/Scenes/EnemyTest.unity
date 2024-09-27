@@ -263,7 +263,7 @@ GameObject:
   - component: {fileID: 640330054}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -751,6 +751,57 @@ Transform:
   m_Children: []
   m_Father: {fileID: 493259773}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1558934132
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1558934134}
+  - component: {fileID: 1558934133}
+  m_Layer: 0
+  m_Name: SpawnManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1558934133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1558934132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1436439eff99aaa48a400e9c5afd3f3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  miniEnemyPrefab: {fileID: 6942523682655118006, guid: 147188cb4ec9fc64da5fc0d1f4447c53, type: 3}
+  spawnPoints:
+  - {fileID: 1724014891}
+  - {fileID: 1330784856}
+  - {fileID: 1848398492}
+  - {fileID: 856684016}
+  player: {fileID: 640330052}
+--- !u!4 &1558934134
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1558934132}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.21480638, y: -2.6764998, z: 0.040964574}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1724014890
 GameObject:
   m_ObjectHideFlags: 0
@@ -953,3 +1004,4 @@ SceneRoots:
   - {fileID: 1118253281}
   - {fileID: 1164479042}
   - {fileID: 493259773}
+  - {fileID: 1558934134}

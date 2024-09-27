@@ -124,8 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 45def22ec34b9c749819d7a9a71d9f22
-      internalID: -857342553
+      spriteID: a18b5aecc8b80eb46b818cc766230542
+      internalID: 1602639190
       vertices: []
       indices: 
       edges: []
@@ -145,8 +145,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f138ca3fbf0de94faffbddb264d9055
-      internalID: -937393561
+      spriteID: 6ee2e66af101c684a8639c50ff5b17a0
+      internalID: -31740684
       vertices: []
       indices: 
       edges: []
@@ -166,8 +166,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54dda6d69dc204148b43151a5fdcde87
-      internalID: 918368437
+      spriteID: 5571493d929bbda45995f1944ffd88aa
+      internalID: -1556577827
       vertices: []
       indices: 
       edges: []
@@ -183,9 +183,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      EnemyVarient2_IdleSpriteSheet_0: -857342553
-      EnemyVarient2_IdleSpriteSheet_1: -937393561
-      EnemyVarient2_IdleSpriteSheet_2: 918368437
+      EnemyVarient2_IdleSpriteSheet_0: 1602639190
+      EnemyVarient2_IdleSpriteSheet_1: -31740684
+      EnemyVarient2_IdleSpriteSheet_2: -1556577827
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -124,8 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51b8ab06d99b3214d9bda29baa817826
-      internalID: 717580327
+      spriteID: 4c3f6bb92882fd440a2146292c1e6756
+      internalID: -2036533756
       vertices: []
       indices: 
       edges: []
@@ -145,8 +145,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27958c5f45174cd47a87ca255fc008ab
-      internalID: -923018664
+      spriteID: dfd9db6896d72e84c8a49d328a8e7788
+      internalID: -1434428828
       vertices: []
       indices: 
       edges: []
@@ -166,8 +166,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0cdc371855e4e2d4b8ed2ea89603dd65
-      internalID: -1293654085
+      spriteID: 4fa0a33ae0c581449b69e77b36124778
+      internalID: -1387242244
       vertices: []
       indices: 
       edges: []
@@ -183,9 +183,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      MiniBoss_AttackSpriteSheet_0: 717580327
-      MiniBoss_AttackSpriteSheet_1: -923018664
-      MiniBoss_AttackSpriteSheet_2: -1293654085
+      MiniBoss_AttackSpriteSheet_0: -2036533756
+      MiniBoss_AttackSpriteSheet_1: -1434428828
+      MiniBoss_AttackSpriteSheet_2: -1387242244
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -20,7 +20,8 @@ public class EnemyLogic : MonoBehaviour, IShootable
         health--;
         if(health <= 0)
         {
-            Instantiate(explosionPrefab, transform.position, Quaternion.identity);
+            GameObject explosion = Instantiate(explosionPrefab, transform.position, Quaternion.identity);
+            Destroy(explosion, 1f);
             Destroy(gameObject);
         }
     }

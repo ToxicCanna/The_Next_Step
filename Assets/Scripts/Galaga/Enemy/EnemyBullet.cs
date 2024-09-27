@@ -17,5 +17,9 @@ public class EnemyBullet : MonoBehaviour
             collision.gameObject.GetComponent<IPlayer>().GetDamage();
             Destroy(gameObject);
         }
+        if (collision.gameObject.tag == "Boundary")
+        {
+            Destroy(gameObject);
+        }
     }
 }

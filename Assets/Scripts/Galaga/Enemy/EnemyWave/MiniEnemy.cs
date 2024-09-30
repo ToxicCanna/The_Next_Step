@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MiniEnemy : MonoBehaviour, IEnemy
 {
@@ -78,7 +79,7 @@ public class MiniEnemy : MonoBehaviour, IEnemy
         Bullet bulletScript = bullet.GetComponent<Bullet>();
         if (bulletScript != null)
         {
-            bulletScript.SetSpeed(5f); // Set speed for the bullet; you can customize this
+            bulletScript.SetSpeed(5f);
         }
 
         Debug.Log("I AM TRYING TO SHOOT");
@@ -101,4 +102,12 @@ public class MiniEnemy : MonoBehaviour, IEnemy
             }
         }
     }
+
+    public void GetDamage()
+    {
+        EnemyObject.EnemyCount--;
+        GameObject explosion = Instantiate(EnemyObject.ExplosionPrefab, transform.position, Quaternion.identity);
+        Destroy(explosion, 1f);
+    }
+    
 }

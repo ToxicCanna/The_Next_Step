@@ -2,41 +2,63 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyLogic : MonoBehaviour, IShootable
+public class EnemyLogic : MonoBehaviour, IEnemy
 {
-    [SerializeField] private int health;
-    [SerializeField] private GameObject explosionPrefab;
-    [SerializeField] private GameObject enemyBullet;
-    [SerializeField] private float bulletTimer;
-    [SerializeField] private float timeMax = 10;
-    [SerializeField] private float timeMin = 3;
+    [SerializeField] private EnemyObject EnemyObject;
+    private float bulletTimer;
+    
+
+    public void DestroyEnemy()
+    {
+        
+        Destroy(gameObject);
+    }
 
     public void GetDamage()
     {
-        Explode();
+        EnemyObject.EnemyCount--;
+        GameObject explosion = Instantiate(EnemyObject.ExplosionPrefab, transform.position, Quaternion.identity);
+        Destroy(explosion, 1f);
+        
     }
-    private void Explode()
+
+    public void Move()
     {
-        health--;
-        if(health <= 0)
-        {
-            GameObject explosion = Instantiate(explosionPrefab, transform.position, Quaternion.identity);
-            Destroy(explosion, 1f);
-            Destroy(gameObject);
-        }
+        transform.Translate(Vector2.right * EnemyObject.MinMoveSpeed * Time.deltaTime);
     }
+
+    public void Respawn()
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public void Shoot()
+    {
+        throw new System.NotImplementedException();
+    }
+
 
     void Start()
     {
-        bulletTimer = Random.Range(timeMin, timeMax);
+        
+        bulletTimer = Random.Range(EnemyObject.MinShootInterval, EnemyObject.MaxShootInterval);
     }
     void Update()
     {
+        Move();
         bulletTimer -= Time.deltaTime;
         if (bulletTimer <= 0)
         {
-            Instantiate(enemyBullet, transform.position, Quaternion.identity);
-            bulletTimer = Random.Range(timeMin, timeMax);
+            Instantiate(EnemyObject.BulletPrefab, transform.position, Quaternion.identity);
+            bulletTimer = Random.Range(EnemyObject.MinShootInterval, EnemyObject.MaxShootInterval);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Boundary")
+        {
+            EnemyObject.MinMoveSpeed *= -1;
         }
     }
 }

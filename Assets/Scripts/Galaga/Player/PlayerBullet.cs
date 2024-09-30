@@ -16,17 +16,20 @@ public class PlayerBullet : MonoBehaviour
     {
         transform.Translate(Vector2.up * moveSpeed * Time.deltaTime);
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (collision.gameObject.tag == "Boundary")
+        if (other.gameObject.tag == "Boundary")
         {
             Destroy(gameObject);
         }
-        if (collision.gameObject.GetComponent<IShootable>() != null)
+        IEnemy enemy = other.gameObject.GetComponent<IEnemy>();
+        if (enemy != null)
         {
-            collision.gameObject.GetComponent<IShootable>().GetDamage();
-            scoreManager.UpdateScore(50);
+            enemy.DestroyEnemy();
+            enemy.GetDamage();
+            Debug.Log("ENEMY IS KILLED");
             Destroy(gameObject);
+            scoreManager.UpdateScore(50);
         }
     }
 }

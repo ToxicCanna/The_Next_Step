@@ -2604,18 +2604,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 120327130}
     m_Modifications:
-    - target: {fileID: 633155385862548911, guid: 61e9c5d18616df54f8f0eee1fba4df93, type: 3}
-      propertyPath: health
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 633155385862548911, guid: 61e9c5d18616df54f8f0eee1fba4df93, type: 3}
-      propertyPath: explosion
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 633155385862548911, guid: 61e9c5d18616df54f8f0eee1fba4df93, type: 3}
-      propertyPath: explosionPrefab
-      value: 
-      objectReference: {fileID: 3878268704232752932, guid: 70b887024784ecc4e9b8b59c0cee3f89, type: 3}
     - target: {fileID: 3272299919459598282, guid: 61e9c5d18616df54f8f0eee1fba4df93, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8
@@ -2713,18 +2701,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5389955436875287347, guid: ad0c0c378dcd1214091f73bdbc853256, type: 3}
-      propertyPath: health
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5389955436875287347, guid: ad0c0c378dcd1214091f73bdbc853256, type: 3}
-      propertyPath: explosion
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5389955436875287347, guid: ad0c0c378dcd1214091f73bdbc853256, type: 3}
-      propertyPath: explosionPrefab
-      value: 
-      objectReference: {fileID: 3878268704232752932, guid: 70b887024784ecc4e9b8b59c0cee3f89, type: 3}
     - target: {fileID: 6691844554378512629, guid: ad0c0c378dcd1214091f73bdbc853256, type: 3}
       propertyPath: m_Name
       value: SpaceEnemy1
@@ -2786,18 +2762,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6561876633442576662, guid: 9fc7965f8ea5d494da20ba740b142b58, type: 3}
-      propertyPath: health
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6561876633442576662, guid: 9fc7965f8ea5d494da20ba740b142b58, type: 3}
-      propertyPath: explosion
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6561876633442576662, guid: 9fc7965f8ea5d494da20ba740b142b58, type: 3}
-      propertyPath: explosionPrefab
-      value: 
-      objectReference: {fileID: 3878268704232752932, guid: 70b887024784ecc4e9b8b59c0cee3f89, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

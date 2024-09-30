@@ -1,17 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class SpawnManager : MonoBehaviour
 {
     [SerializeField] private GameObject miniEnemyPrefab;
 
     [SerializeField] private Transform[] spawnPoints;
-    [SerializeField] private Transform player;
+    [SerializeField] public Transform player;
 
     private int miniEnemyCount = 0;
     private int maxMiniEnemyCount = 15;
-    private int currentEnemyOnScreenCount = 0;
+    public int currentEnemyOnScreenCount = 0;
     private int maxEnemyCountOnScreen = 4;
 
     public static SpawnManager Instance;
@@ -65,7 +65,15 @@ public class SpawnManager : MonoBehaviour
     {
         currentEnemyOnScreenCount--;
 
-        SpawnEnemy();
+        if(miniEnemyCount <= maxMiniEnemyCount && currentEnemyOnScreenCount == 0)
+        {
+            SceneManager.LoadScene("EnemyWave2");
+        }
+        else
+        {
+            SpawnEnemy();
+        }
+        
     }
 
     private Transform RandomSpawn()

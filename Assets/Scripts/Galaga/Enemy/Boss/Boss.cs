@@ -6,19 +6,24 @@ using UnityEngine.UI;
 
 public class Boss : MonoBehaviour, IEnemy
 {
-    [SerializeField] EnemyObject enemyObject;
+    [SerializeField] private EnemyObject enemyObject;
     [SerializeField] private Transform centerPoint;
     [SerializeField] private Transform[] bulletSpawnPoints;
+
+
     private float radius;
     private float angle; 
     private float bulletTimer;
     private bool isRotating;
+
+
     [SerializeField] private int bossHealth = 30;
     [SerializeField] private Slider healthBar;
 
 
     private void Start()
     {
+        //radius is different between center point and enemy
         radius = Vector3.Distance(transform.position, centerPoint.position);
         bulletTimer = Random.Range(enemyObject.MinShootInterval, enemyObject.MaxShootInterval);
         
@@ -50,23 +55,29 @@ public class Boss : MonoBehaviour, IEnemy
     public void DestroyEnemy()
     {
         Destroy(gameObject);
+
     }
 
     public void GetDamage()
     {
-        Debug.Log("Enemy hit! Current health: " + bossHealth);
+        Debug.Log("Health = " + bossHealth);
+
+        //damage set to 1
         BossDamage(1);
         if (bossHealth <= 0)
         {
-            DestroyEnemy(); // Destroy if health is 0 or below
+            //destroy enemy when health is less than 0
+            DestroyEnemy(); 
             Debug.Log("Enemy destroyed!");
         }
+        
     }
 
     public void BossDamage(int damage)
     {
+        //updating health bar
         bossHealth -= damage;
-        healthBar.value = bossHealth; // Update health bar
+        healthBar.value = bossHealth;
         
     }
     public void Move()

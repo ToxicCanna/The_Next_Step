@@ -10,6 +10,11 @@ public class EnemyBullet : MonoBehaviour
     {
         transform.Translate(Vector2.down * moveSpeed * Time.deltaTime);
     }
+
+    public void SetSpeed(float newSpeed)
+    {
+        moveSpeed = newSpeed;
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.GetComponent<IPlayer>() != null)

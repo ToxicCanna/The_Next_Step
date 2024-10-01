@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/EnemyWave2.unity
     guid: 985beb239f45a114392dbbc416392127
   - enabled: 1
+    path: Assets/Scenes/BossScene.unity
+    guid: 9a9e5bedb6982d84ca4519377e092c1c
+  - enabled: 1
     path: Assets/Scenes/Rampage_The_Next_Step_Game.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects: {}

@@ -15,9 +15,8 @@ MonoBehaviour:
   MaxMoveSpeed: 0
   MinMoveSpeed: 1.5
   EnemyType: {fileID: 6691844554378512629, guid: ad0c0c378dcd1214091f73bdbc853256, type: 3}
-  MinShootInterval: 2
+  MinShootInterval: 3
   MaxShootInterval: 4
   ShootingRange: 0
   BulletPrefab: {fileID: 6587301993898259099, guid: e28ec2cc901e8284b831520c2a95616a, type: 3}
-  EnemyCount: 18
   ExplosionPrefab: {fileID: 3878268704232752932, guid: 70b887024784ecc4e9b8b59c0cee3f89, type: 3}

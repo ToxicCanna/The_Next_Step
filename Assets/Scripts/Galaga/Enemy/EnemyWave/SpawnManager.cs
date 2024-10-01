@@ -28,11 +28,13 @@ public class SpawnManager : MonoBehaviour
     {
         for (int i = 0; i < maxEnemyCountOnScreen; i++)
         {
+            //spawn enemy until 15 of those die
             SpawnEnemy();
         }
     }
     private void SpawnEnemy()
     {
+        //spawn an enemy if there are less that 4 enemy on screen
         if (currentEnemyOnScreenCount < maxEnemyCountOnScreen)
         {
             GameObject newEnemy = null;
@@ -67,6 +69,7 @@ public class SpawnManager : MonoBehaviour
 
         if(miniEnemyCount <= maxMiniEnemyCount && currentEnemyOnScreenCount == 0)
         {
+            //load new scene when 15 enemies are killed
             SceneManager.LoadScene("EnemyWave2");
         }
         else
@@ -78,6 +81,7 @@ public class SpawnManager : MonoBehaviour
 
     private Transform RandomSpawn()
     {
+        //spawn enemy from any random spawn point
         int randomEnemy = Random.Range(0, spawnPoints.Length);
         return spawnPoints[randomEnemy];
     }

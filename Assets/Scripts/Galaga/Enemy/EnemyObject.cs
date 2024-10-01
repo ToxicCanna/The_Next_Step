@@ -18,8 +18,8 @@ public class EnemyObject : ScriptableObject
     public float ShootingRange;
     public GameObject BulletPrefab;
 
-    public int EnemyCount;
+    [Header("Explosion")]
     public GameObject ExplosionPrefab;
 
-    //public int Health;
+   
 }

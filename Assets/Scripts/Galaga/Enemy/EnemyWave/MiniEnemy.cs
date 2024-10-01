@@ -15,9 +15,11 @@ public class MiniEnemy : MonoBehaviour, IEnemy
     private Coroutine shootCoroutine;
     public void Initialize(Transform[] spawnPoints, Transform player)
     {
+        // referencing this from spawn manager since we cannot reference it through a prefab
         this.spawnPoints = spawnPoints;
         this.player = player;
 
+        //every enemy instantiate with a different speed
         randomSpeed = Random.Range(EnemyObject.MinMoveSpeed, EnemyObject.MaxMoveSpeed);
 
         shootCoroutine = StartCoroutine(ShootRoutine());
@@ -29,7 +31,6 @@ public class MiniEnemy : MonoBehaviour, IEnemy
     private void Update()
     {
         Move();
-
          
         if (IsOffScreen())
         {
@@ -54,6 +55,7 @@ public class MiniEnemy : MonoBehaviour, IEnemy
     }
         public void Respawn()
     {
+        //spawn from any random spawn point
         int SpawnRandom = Random.Range(0, spawnPoints.Length);
         transform.position = spawnPoints[SpawnRandom].position;
     }
@@ -92,12 +94,14 @@ public class MiniEnemy : MonoBehaviour, IEnemy
             if(Vector3.Distance(transform.position, player.position) < EnemyObject.ShootingRange)
             {
                 Shoot();
+
+                //each enemy has its own shooting interval
                 float waitTime = Random.Range(EnemyObject.MinShootInterval, EnemyObject.MaxShootInterval);
                 yield return new WaitForSeconds(waitTime);
             }
             else
             {
-                // wait before checkig again
+                
                 yield return new WaitForSeconds(0.5f);
             }
         }

@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Boss : MonoBehaviour, IEnemy
 {
@@ -12,7 +13,9 @@ public class Boss : MonoBehaviour, IEnemy
     private float angle; 
     private float bulletTimer;
     private bool isRotating;
- 
+    [SerializeField] private int bossHealth = 30;
+    [SerializeField] private Slider healthBar;
+
 
     private void Start()
     {
@@ -20,6 +23,9 @@ public class Boss : MonoBehaviour, IEnemy
         bulletTimer = Random.Range(enemyObject.MinShootInterval, enemyObject.MaxShootInterval);
         
         StartCoroutine(BossBehavior());
+
+        healthBar.maxValue = bossHealth;
+        healthBar.value = bossHealth;
     }
 
     private void Update()
@@ -43,22 +49,35 @@ public class Boss : MonoBehaviour, IEnemy
     }
     public void DestroyEnemy()
     {
-        throw new System.NotImplementedException();
+        Destroy(gameObject);
     }
 
     public void GetDamage()
     {
-        
+        Debug.Log("Enemy hit! Current health: " + bossHealth);
+        BossDamage(1);
+        if (bossHealth <= 0)
+        {
+            DestroyEnemy(); // Destroy if health is 0 or below
+            Debug.Log("Enemy destroyed!");
+        }
     }
 
+    public void BossDamage(int damage)
+    {
+        bossHealth -= damage;
+        healthBar.value = bossHealth; // Update health bar
+        
+    }
     public void Move()
     {
         //moving in circular motion
         angle += enemyObject.MinMoveSpeed * Time.deltaTime;
         float x = centerPoint.position.x + radius * Mathf.Cos(angle * Mathf.Deg2Rad);
         float y = centerPoint.position.y + radius * Mathf.Sin(angle * Mathf.Deg2Rad);
+
         transform.position = new Vector3(x, y, transform.position.z);
-        
+
     }
 
     public void Respawn()
@@ -68,36 +87,17 @@ public class Boss : MonoBehaviour, IEnemy
 
     public void Shoot()
     {
-
-        foreach(var spawnPoint in bulletSpawnPoints)
-    {
-            GameObject bullet = Instantiate(enemyObject.BulletPrefab, spawnPoint.position, Quaternion.identity); 
-            Rigidbody2D bulletRb = bullet.GetComponent<Rigidbody2D>(); 
-
-            // Apply force in all directions
-            Vector2 forceDirection = Vector2.zero;
-
-            if (spawnPoint.position.x > transform.position.x) 
+        foreach (var spawnPoint in bulletSpawnPoints)
+        {
+            GameObject bullet = Instantiate(enemyObject.BulletPrefab, spawnPoint.position, Quaternion.identity);
+            Vector2 direction = (spawnPoint.position - transform.position).normalized;
+            bullet.transform.up = direction;
+            Bullet bulletScript = bullet.GetComponent<Bullet>();
+            if (bulletScript != null)
             {
-                forceDirection = Vector2.right; 
+                bulletScript.SetSpeed(5f); 
             }
-            else if (spawnPoint.position.x < transform.position.x) 
-            {
-                forceDirection = Vector2.left; 
-            }
-
-            if (spawnPoint.position.y > transform.position.y) 
-            {
-                forceDirection += Vector2.up; 
-            }
-            else if (spawnPoint.position.y < transform.position.y) 
-            {
-                forceDirection += Vector2.down; 
-            }
-
-            bulletRb.AddForce(forceDirection.normalized * enemyObject.MaxMoveSpeed, ForceMode2D.Impulse); 
         }
-
 
     }
 

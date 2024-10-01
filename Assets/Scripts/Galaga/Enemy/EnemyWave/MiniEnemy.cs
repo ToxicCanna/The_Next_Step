@@ -108,6 +108,7 @@ public class MiniEnemy : MonoBehaviour, IEnemy
         //EnemyObject.EnemyCount--;
         GameObject explosion = Instantiate(EnemyObject.ExplosionPrefab, transform.position, Quaternion.identity);
         Destroy(explosion, 1f);
+        DestroyEnemy();
     }
     
 }

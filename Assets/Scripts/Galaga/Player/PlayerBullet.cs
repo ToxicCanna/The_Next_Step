@@ -25,7 +25,7 @@ public class PlayerBullet : MonoBehaviour
         IEnemy enemy = other.gameObject.GetComponent<IEnemy>();
         if (enemy != null)
         {
-            enemy.DestroyEnemy();
+            
             enemy.GetDamage();
             Debug.Log("ENEMY IS KILLED");
             Destroy(gameObject);

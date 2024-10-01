@@ -21,5 +21,5 @@ public class EnemyObject : ScriptableObject
     public int EnemyCount;
     public GameObject ExplosionPrefab;
 
-    public int Health;
+    //public int Health;
 }

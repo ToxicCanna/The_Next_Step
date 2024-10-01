@@ -16,10 +16,10 @@ public class EnemyLogic : MonoBehaviour, IEnemy
 
     public void GetDamage()
     {
-        EnemyObject.EnemyCount--;
+        //EnemyObject.EnemyCount--;
         GameObject explosion = Instantiate(EnemyObject.ExplosionPrefab, transform.position, Quaternion.identity);
         Destroy(explosion, 1f);
-        
+        DestroyEnemy();
     }
 
     public void Move()

@@ -18,4 +18,8 @@ public class EnemyObject : ScriptableObject
     public float ShootingRange;
     public GameObject BulletPrefab;
 
+    [Header("Explosion")]
+    public GameObject ExplosionPrefab;
+
+   
 }

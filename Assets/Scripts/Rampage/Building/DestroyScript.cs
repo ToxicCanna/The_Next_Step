@@ -22,5 +22,12 @@ public class DestroyScript : MonoBehaviour, IDestroy
 
         Destroy(gameObject);
     }
-
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.GetComponent<IHitbox>() != null)
+        {
+            GetDamage();
+            //Destroy(gameObject);
+        }
+    }
 }

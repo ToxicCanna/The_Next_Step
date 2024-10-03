@@ -13,6 +13,8 @@ public class MovementRampage : MonoBehaviour, IPlayer
     [SerializeField] private Image[] livesUI;
     [SerializeField] private GameObject meleeHitboxPrefab;
     private ScoreManager scoreManager;
+    [SerializeField] Animator anim;
+
 
     // Start is called before the first frame update
     void Awake()
@@ -31,6 +33,8 @@ public class MovementRampage : MonoBehaviour, IPlayer
     private void OnShoot()
     {
         GameObject hitbox = Instantiate(meleeHitboxPrefab, transform.position, Quaternion.identity);
+
+        anim.SetTrigger("IsPunching");
 
         Destroy(hitbox, 0.1f);
     }

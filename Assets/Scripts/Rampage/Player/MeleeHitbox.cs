@@ -2,15 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MeleeHitbox : MonoBehaviour
+public class MeleeHitbox : MonoBehaviour, IHitbox
 {
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        IDestroy destroy = other.gameObject.GetComponent<IDestroy>();
-        if (destroy != null)
+        if (collision.gameObject.GetComponent<IDestroy>() != null)
         {
-            Debug.Log("Hit: " + other.gameObject.name);
-            destroy.GetDamage();
+            collision.gameObject.GetComponent<DestroyScript>().GetDamage();
+            Destroy(gameObject);
         }
     }
 }

@@ -11,7 +11,7 @@ public class MovementRampage : MonoBehaviour, IPlayer
     [SerializeField] private int moveSpeed = 5;
     [SerializeField] private int playerLives = 3;
     [SerializeField] private Image[] livesUI;
-
+    [SerializeField] private GameObject meleeHitboxPrefab;
 
     // Start is called before the first frame update
     void Awake()
@@ -26,12 +26,11 @@ public class MovementRampage : MonoBehaviour, IPlayer
         rb.velocity = inputValue.Get<Vector2>() * moveSpeed;
     }
 
-    private void OnShoot(Collider2D collision)
+    private void OnShoot()
     {
-        if (collision.gameObject.GetComponent<IDestroy>() != null)
-        {
-            collision.gameObject.GetComponent<IDestroy>().GetDamage();
-        }
+        GameObject hitbox = Instantiate(meleeHitboxPrefab, transform.position, Quaternion.identity);
+
+        Destroy(hitbox, 0.1f);
     }
     public void GetDamage()
     {

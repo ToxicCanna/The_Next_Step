@@ -1,18 +1,21 @@
 //using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Boss : MonoBehaviour, IEnemy
 {
     [SerializeField] private EnemyObject enemyObject;
-    [SerializeField] private Transform centerPoint;
+    //[SerializeField] private Transform centerPoint;
     [SerializeField] private Transform[] bulletSpawnPoints;
+    [SerializeField] private Transform[] checkPoints;
 
 
-    private float radius;
-    private float angle; 
+    //private float radius;
+    //private float angle; 
     private float bulletTimer;
     private bool isRotating;
 
@@ -21,11 +24,12 @@ public class Boss : MonoBehaviour, IEnemy
     [SerializeField] private Slider healthBar;
     [SerializeField] Animator anim;
 
+    private AudioManager audioManager;
 
     private void Start()
     {
         //radius is different between center point and enemy
-        radius = Vector3.Distance(transform.position, centerPoint.position);
+        //radius = Vector3.Distance(transform.position, centerPoint.position);
         bulletTimer = Random.Range(enemyObject.MinShootInterval, enemyObject.MaxShootInterval);
         
         StartCoroutine(BossBehavior());
@@ -34,6 +38,7 @@ public class Boss : MonoBehaviour, IEnemy
         healthBar.value = bossHealth;
 
         anim = GetComponent<Animator>();
+        audioManager = GameObject.FindObjectOfType<AudioManager>();
     }
 
     private void Update()
@@ -58,7 +63,9 @@ public class Boss : MonoBehaviour, IEnemy
     public void DestroyEnemy()
     {
         Destroy(gameObject);
-
+        GameObject explosion = Instantiate(enemyObject.ExplosionPrefab, transform.position, Quaternion.identity);
+        audioManager.PlaySFX(audioManager.LevelChange);
+        SceneManager.LoadScene("Rampage_The_Next_Step_Game");
     }
 
     public void GetDamage()
@@ -86,12 +93,17 @@ public class Boss : MonoBehaviour, IEnemy
     public void Move()
     {
         //moving in circular motion
+        /*
         angle += enemyObject.MinMoveSpeed * Time.deltaTime;
         float x = centerPoint.position.x + radius * Mathf.Cos(angle * Mathf.Deg2Rad);
         float y = centerPoint.position.y + radius * Mathf.Sin(angle * Mathf.Deg2Rad);
 
         transform.position = new Vector3(x, y, transform.position.z);
+        */
+        int RandomDestination = Random.Range(0, checkPoints.Length);
 
+        transform.position = Vector3.MoveTowards(transform.position, checkPoints[RandomDestination].position, enemyObject.MinMoveSpeed * Time.deltaTime);
+        
     }
 
     public void Respawn()

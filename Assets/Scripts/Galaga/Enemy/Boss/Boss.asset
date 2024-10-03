@@ -12,13 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c7219059ee8232488dfe606601f9436, type: 3}
   m_Name: Boss
   m_EditorClassIdentifier: 
-  MaxMoveSpeed: 50
-  MinMoveSpeed: 40
+  MaxMoveSpeed: 20
+  MinMoveSpeed: 10
   EnemyType: {fileID: 82399150076400816, guid: 9fc7965f8ea5d494da20ba740b142b58, type: 3}
-  MinShootInterval: 0.5
-  MaxShootInterval: 1
+  MinShootInterval: 0.3
+  MaxShootInterval: 0.7
   ShootingRange: 0
   BulletPrefab: {fileID: 6587301993898259099, guid: e28ec2cc901e8284b831520c2a95616a, type: 3}
-  EnemyCount: 0
   ExplosionPrefab: {fileID: 3878268704232752932, guid: 70b887024784ecc4e9b8b59c0cee3f89, type: 3}
-  Health: 10

@@ -10,10 +10,13 @@ public class EnemyLogic : MonoBehaviour, IEnemy
     private static int enemyCount = 0;
     [SerializeField] private Transform bulletSpawn;
     [SerializeField] Animator anim;
+
+    private AudioManager audioManager;
     void Start()
     {
         anim = GetComponent<Animator>();
         bulletTimer = Random.Range(EnemyObject.MinShootInterval, EnemyObject.MaxShootInterval);
+        audioManager = FindObjectOfType<AudioManager>();
     }
 
     void Update()
@@ -27,7 +30,7 @@ public class EnemyLogic : MonoBehaviour, IEnemy
         GameObject explosion = Instantiate(EnemyObject.ExplosionPrefab, bulletSpawn.position, Quaternion.identity);
         Destroy(explosion, 1f);
         DestroyEnemy();
-        
+        audioManager.PlaySFX(audioManager.Explosion);
     }
     public void DestroyEnemy()
     {
@@ -38,6 +41,7 @@ public class EnemyLogic : MonoBehaviour, IEnemy
         if (enemyCount >= 18)
         {
             SceneManager.LoadScene("BossScene");
+            audioManager.PlaySFX(audioManager.LevelChange);
         }
     }
     public void Move()

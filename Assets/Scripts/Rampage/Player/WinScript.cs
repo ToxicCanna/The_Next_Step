@@ -7,6 +7,7 @@ public class WinScript : MonoBehaviour
 {
     [SerializeField] private GameObject trophy;
     [SerializeField] private Transform artLocation;
+    [SerializeField] private GameObject enemy;
 
     [SerializeField] private int winLoop = 24;
 
@@ -18,6 +19,7 @@ public class WinScript : MonoBehaviour
         {
             Instantiate(trophy, artLocation.position, Quaternion.identity);
             Debug.Log($"Trophy instantiated! ");
+            Destroy(enemy);
         }
     }
     

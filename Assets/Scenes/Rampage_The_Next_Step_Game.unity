@@ -1158,7 +1158,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.5012663, y: -0.41673315}
+  m_Offset: {x: 0.48046583, y: -0.41673326}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1169,7 +1169,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.56994116, y: 5.7798214}
+  m_Size: {x: 0.6115421, y: 5.7798214}
   m_EdgeRadius: 0
 --- !u!114 &656079176
 MonoBehaviour:
@@ -2751,6 +2751,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trophy: {fileID: 434947693236202674, guid: bc14a153c0c4bad4599e012692e4fa32, type: 3}
   artLocation: {fileID: 1596450670}
+  enemy: {fileID: 2062848197}
   winLoop: 24
 --- !u!4 &1874604825 stripped
 Transform:

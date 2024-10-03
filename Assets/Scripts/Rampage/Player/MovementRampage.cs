@@ -18,6 +18,7 @@ public class MovementRampage : MonoBehaviour, IPlayer
 
     private Vector2 moveInput;
 
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -58,7 +59,7 @@ public class MovementRampage : MonoBehaviour, IPlayer
     {
         Debug.Log("Trophy collected");
         scoreManager.UpdateScore(500);
-        WinGame();
+        StartCoroutine(WaitAndWin());
     }
     public void Score()
     {
@@ -103,10 +104,12 @@ public class MovementRampage : MonoBehaviour, IPlayer
         rb.gravityScale = 0;
         rb.constraints = RigidbodyConstraints2D.None; // Unfreeze Y position
         rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+        anim.SetBool("OnBuilding", true);
     }
     private void UnfreezePositionY()
     {
         rb.gravityScale = 1;
+        anim.SetBool("OnBuilding", false);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -126,7 +129,11 @@ public class MovementRampage : MonoBehaviour, IPlayer
             UnfreezePositionY();
         }
     }
-
+    private IEnumerator WaitAndWin()
+    {
+        yield return new WaitForSeconds(2f); // Wait for 2 seconds
+        WinGame();
+    }
     public void WinGame()
     {
         Application.Quit();

@@ -19,6 +19,7 @@ public class EnemyBullet : MonoBehaviour
     {
         if (collision.gameObject.GetComponent<IPlayer>() != null)
         {
+            Debug.Log("Enemy FOundddddddddddd!!!!!");
             collision.gameObject.GetComponent<IPlayer>().GetDamage();
             Destroy(gameObject);
         }

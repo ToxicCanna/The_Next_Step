@@ -19,6 +19,7 @@ public class Boss : MonoBehaviour, IEnemy
 
     [SerializeField] private int bossHealth = 30;
     [SerializeField] private Slider healthBar;
+    [SerializeField] Animator anim;
 
 
     private void Start()
@@ -31,6 +32,8 @@ public class Boss : MonoBehaviour, IEnemy
 
         healthBar.maxValue = bossHealth;
         healthBar.value = bossHealth;
+
+        anim = GetComponent<Animator>();
     }
 
     private void Update()
@@ -134,6 +137,7 @@ public class Boss : MonoBehaviour, IEnemy
     {
         //Rotate but in place
         transform.Rotate(0, 0, enemyObject.MaxMoveSpeed * Time.deltaTime);
+        anim.SetTrigger("IsAttacking");
     }
     
 }

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MovementGalaga : MonoBehaviour, IPlayer
@@ -53,6 +54,7 @@ public class MovementGalaga : MonoBehaviour, IPlayer
         if(playerLives <= 0)
         {
             Destroy(gameObject);
+            SceneManager.LoadScene("EnemyTest");
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)

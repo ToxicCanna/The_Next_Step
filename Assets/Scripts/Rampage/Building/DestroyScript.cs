@@ -6,8 +6,8 @@ public class DestroyScript : MonoBehaviour, IDestroy
 {
     [SerializeField] private int health = 3;
     [SerializeField] private GameObject player;
-    [SerializeField] private GameObject trophy;
-    [SerializeField] private Transform trophyLocation;
+    [SerializeField] private GameObject art;
+    [SerializeField] private Transform artLocation;
 
 
     void Awake()
@@ -33,18 +33,19 @@ public class DestroyScript : MonoBehaviour, IDestroy
         if (player != null)
         {
             player.GetComponent<MovementRampage>().Score();
+            player.GetComponent<WinScript>().WinTrack();
         }
 
         float randomValue = Random.Range(0f, 1f);
 
         if (randomValue < 0.25f)
         {
-            Instantiate(trophy, trophyLocation.position, Quaternion.identity);
-            Debug.Log($"Trophy instantiated! {randomValue} ");
+            Instantiate(art, artLocation.position, Quaternion.identity);
+            Debug.Log($"Art instantiated! {randomValue} ");
         }
         else
         {
-            Debug.Log("No trophy this time.");
+            Debug.Log("No Art this time.");
         }
     }
     public void AddScore()

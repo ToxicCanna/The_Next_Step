@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
@@ -50,8 +51,14 @@ public class MovementRampage : MonoBehaviour, IPlayer
     }
     public void Collect()
     {
-        Debug.Log("collected");
+        Debug.Log("Artifact collected");
+        scoreManager.UpdateScore(250);
+    }
+    public void TrophyCollect()
+    {
+        Debug.Log("Trophy collected");
         scoreManager.UpdateScore(500);
+        WinGame();
     }
     public void Score()
     {
@@ -118,5 +125,13 @@ public class MovementRampage : MonoBehaviour, IPlayer
         {
             UnfreezePositionY();
         }
+    }
+
+    public void WinGame()
+    {
+        Application.Quit();
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
     }
 }

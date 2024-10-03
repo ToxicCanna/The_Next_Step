@@ -3,7 +3,12 @@ guid: b56e2e03e0c5b614fac3e4593d5353da
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - player: {fileID: 6246295588374664914, guid: f5a28576a5dfb0543ac64644f3d32411, type: 3}
+  - art: {fileID: 1695284086094638720, guid: 62a81d0730acec74081a428108a6e3c6, type: 3}
+  - trophy: {fileID: 434947693236202674, guid: bc14a153c0c4bad4599e012692e4fa32, type: 3}
+  - trophyLocation: {instanceID: 0}
+  - artLocation: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

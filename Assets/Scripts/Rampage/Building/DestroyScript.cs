@@ -5,7 +5,15 @@ using UnityEngine;
 public class DestroyScript : MonoBehaviour, IDestroy
 {
     [SerializeField] private int health = 3;
-    [SerializeField] GameObject player;
+    [SerializeField] private GameObject player;
+    [SerializeField] private GameObject trophy;
+    [SerializeField] private Transform trophyLocation;
+
+
+    void Awake()
+    {
+        player = GameObject.FindGameObjectWithTag("Player");
+    }
     public void GetDamage()
     {
         health--; // Decrease health by 1
@@ -22,7 +30,22 @@ public class DestroyScript : MonoBehaviour, IDestroy
 
         Destroy(gameObject);
 
-        player.GetComponent<MovementRampage>().Score();
+        if (player != null)
+        {
+            player.GetComponent<MovementRampage>().Score();
+        }
+
+        float randomValue = Random.Range(0f, 1f);
+
+        if (randomValue < 0.25f)
+        {
+            Instantiate(trophy, trophyLocation.position, Quaternion.identity);
+            Debug.Log($"Trophy instantiated! {randomValue} ");
+        }
+        else
+        {
+            Debug.Log("No trophy this time.");
+        }
     }
     public void AddScore()
     {

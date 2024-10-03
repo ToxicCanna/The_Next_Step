@@ -174,6 +174,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: GroundRight
       objectReference: {fileID: 0}
+    - target: {fileID: 7108745744701841361, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
+      propertyPath: trophyLocation
+      value: 
+      objectReference: {fileID: 444660778}
+    - target: {fileID: 7126904735700718222, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
+      propertyPath: trophyLocation
+      value: 
+      objectReference: {fileID: 444660778}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -405,6 +413,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: BuildingSlab (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 7108745744701841361, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
+      propertyPath: trophyLocation
+      value: 
+      objectReference: {fileID: 444660778}
+    - target: {fileID: 7126904735700718222, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
+      propertyPath: trophyLocation
+      value: 
+      objectReference: {fileID: 444660778}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -683,6 +699,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: BuildingSlab (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 7108745744701841361, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
+      propertyPath: trophyLocation
+      value: 
+      objectReference: {fileID: 444660778}
+    - target: {fileID: 7126904735700718222, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
+      propertyPath: trophyLocation
+      value: 
+      objectReference: {fileID: 444660778}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -820,6 +844,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: BuildingGroundMiddle
       objectReference: {fileID: 0}
+    - target: {fileID: 7108745744701841361, guid: 42f2fa56a79b12344bcf38daf318a786, type: 3}
+      propertyPath: trophyLocaction
+      value: 
+      objectReference: {fileID: 444660778}
+    - target: {fileID: 7126904735700718222, guid: 42f2fa56a79b12344bcf38daf318a786, type: 3}
+      propertyPath: trophyLocaction
+      value: 
+      objectReference: {fileID: 444660778}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -830,6 +862,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2126982718653742579, guid: 42f2fa56a79b12344bcf38daf318a786, type: 3}
   m_PrefabInstance: {fileID: 435962624}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &444660777
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 444660778}
+  m_Layer: 0
+  m_Name: TrophySpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &444660778
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 444660777}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.05, y: -3.31, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &487055450
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -882,6 +945,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: BuildingGroundRight
       objectReference: {fileID: 0}
+    - target: {fileID: 7108745744701841361, guid: 42f2fa56a79b12344bcf38daf318a786, type: 3}
+      propertyPath: trophyLocation
+      value: 
+      objectReference: {fileID: 444660778}
+    - target: {fileID: 7126904735700718222, guid: 42f2fa56a79b12344bcf38daf318a786, type: 3}
+      propertyPath: trophyLocation
+      value: 
+      objectReference: {fileID: 444660778}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1080,6 +1151,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: BuildingGroundLeft
       objectReference: {fileID: 0}
+    - target: {fileID: 7108745744701841361, guid: 42f2fa56a79b12344bcf38daf318a786, type: 3}
+      propertyPath: trophyLocation
+      value: 
+      objectReference: {fileID: 444660778}
+    - target: {fileID: 7126904735700718222, guid: 42f2fa56a79b12344bcf38daf318a786, type: 3}
+      propertyPath: trophyLocation
+      value: 
+      objectReference: {fileID: 444660778}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1363,6 +1442,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: BuildingSlab (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7108745744701841361, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
+      propertyPath: trophyLocaction
+      value: 
+      objectReference: {fileID: 444660778}
+    - target: {fileID: 7126904735700718222, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
+      propertyPath: trophyLocaction
+      value: 
+      objectReference: {fileID: 444660778}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2480,6 +2567,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: BuildingSlab (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7108745744701841361, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
+      propertyPath: trophyLocaction
+      value: 
+      objectReference: {fileID: 444660778}
+    - target: {fileID: 7126904735700718222, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
+      propertyPath: trophyLocaction
+      value: 
+      objectReference: {fileID: 444660778}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2699,6 +2794,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: GroundMiddle
       objectReference: {fileID: 0}
+    - target: {fileID: 7108745744701841361, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
+      propertyPath: trophyLocaction
+      value: 
+      objectReference: {fileID: 444660778}
+    - target: {fileID: 7126904735700718222, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
+      propertyPath: trophyLocaction
+      value: 
+      objectReference: {fileID: 444660778}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2853,6 +2956,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: BuildingSlab (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 7108745744701841361, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
+      propertyPath: trophyLocation
+      value: 
+      objectReference: {fileID: 444660778}
+    - target: {fileID: 7126904735700718222, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
+      propertyPath: trophyLocation
+      value: 
+      objectReference: {fileID: 444660778}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3197,6 +3308,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: BuildingSlab (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 7108745744701841361, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
+      propertyPath: trophyLocation
+      value: 
+      objectReference: {fileID: 444660778}
+    - target: {fileID: 7126904735700718222, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
+      propertyPath: trophyLocation
+      value: 
+      objectReference: {fileID: 444660778}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3298,6 +3417,14 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7108745744701841361, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
+      propertyPath: trophyLocation
+      value: 
+      objectReference: {fileID: 444660778}
+    - target: {fileID: 7126904735700718222, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
+      propertyPath: trophyLocation
+      value: 
+      objectReference: {fileID: 444660778}
     m_RemovedComponents:
     - {fileID: 8200255929893713458, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
     - {fileID: 5382171122022792592, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
@@ -3415,3 +3542,4 @@ SceneRoots:
   - {fileID: 1316757856}
   - {fileID: 1933746142}
   - {fileID: 2102288202}
+  - {fileID: 444660778}

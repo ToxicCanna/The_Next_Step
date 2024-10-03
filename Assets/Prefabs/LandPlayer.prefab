@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 2191009088092202231}
   m_Layer: 0
   m_Name: LandPlayer
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -219,6 +219,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   meleeHitboxPrefab: {fileID: 6641726587136062165, guid: aee79adeb48d4054aa9349ac472ce48f, type: 3}
+  anim: {fileID: 0}
 --- !u!61 &1395816374757045797
 BoxCollider2D:
   m_ObjectHideFlags: 0

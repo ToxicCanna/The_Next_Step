@@ -175,9 +175,25 @@ PrefabInstance:
       value: GroundRight
       objectReference: {fileID: 0}
     - target: {fileID: 7108745744701841361, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
+      propertyPath: art
+      value: 
+      objectReference: {fileID: 1695284086094638720, guid: 62a81d0730acec74081a428108a6e3c6, type: 3}
+    - target: {fileID: 7108745744701841361, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
+      propertyPath: artLocation
+      value: 
+      objectReference: {fileID: 1596450670}
+    - target: {fileID: 7108745744701841361, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
       propertyPath: trophyLocation
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 7126904735700718222, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
+      propertyPath: art
+      value: 
+      objectReference: {fileID: 1695284086094638720, guid: 62a81d0730acec74081a428108a6e3c6, type: 3}
+    - target: {fileID: 7126904735700718222, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
+      propertyPath: artLocation
+      value: 
+      objectReference: {fileID: 1596450670}
     - target: {fileID: 7126904735700718222, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
       propertyPath: trophyLocation
       value: 
@@ -414,9 +430,25 @@ PrefabInstance:
       value: BuildingSlab (6)
       objectReference: {fileID: 0}
     - target: {fileID: 7108745744701841361, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
+      propertyPath: art
+      value: 
+      objectReference: {fileID: 1695284086094638720, guid: 62a81d0730acec74081a428108a6e3c6, type: 3}
+    - target: {fileID: 7108745744701841361, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
+      propertyPath: artLocation
+      value: 
+      objectReference: {fileID: 1596450670}
+    - target: {fileID: 7108745744701841361, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
       propertyPath: trophyLocation
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 7126904735700718222, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
+      propertyPath: art
+      value: 
+      objectReference: {fileID: 1695284086094638720, guid: 62a81d0730acec74081a428108a6e3c6, type: 3}
+    - target: {fileID: 7126904735700718222, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
+      propertyPath: artLocation
+      value: 
+      objectReference: {fileID: 1596450670}
     - target: {fileID: 7126904735700718222, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
       propertyPath: trophyLocation
       value: 
@@ -700,9 +732,25 @@ PrefabInstance:
       value: BuildingSlab (11)
       objectReference: {fileID: 0}
     - target: {fileID: 7108745744701841361, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
+      propertyPath: art
+      value: 
+      objectReference: {fileID: 1695284086094638720, guid: 62a81d0730acec74081a428108a6e3c6, type: 3}
+    - target: {fileID: 7108745744701841361, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
+      propertyPath: artLocation
+      value: 
+      objectReference: {fileID: 1596450670}
+    - target: {fileID: 7108745744701841361, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
       propertyPath: trophyLocation
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 7126904735700718222, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
+      propertyPath: art
+      value: 
+      objectReference: {fileID: 1695284086094638720, guid: 62a81d0730acec74081a428108a6e3c6, type: 3}
+    - target: {fileID: 7126904735700718222, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
+      propertyPath: artLocation
+      value: 
+      objectReference: {fileID: 1596450670}
     - target: {fileID: 7126904735700718222, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
       propertyPath: trophyLocation
       value: 
@@ -845,9 +893,25 @@ PrefabInstance:
       value: BuildingGroundMiddle
       objectReference: {fileID: 0}
     - target: {fileID: 7108745744701841361, guid: 42f2fa56a79b12344bcf38daf318a786, type: 3}
+      propertyPath: art
+      value: 
+      objectReference: {fileID: 1695284086094638720, guid: 62a81d0730acec74081a428108a6e3c6, type: 3}
+    - target: {fileID: 7108745744701841361, guid: 42f2fa56a79b12344bcf38daf318a786, type: 3}
+      propertyPath: artLocation
+      value: 
+      objectReference: {fileID: 1596450670}
+    - target: {fileID: 7108745744701841361, guid: 42f2fa56a79b12344bcf38daf318a786, type: 3}
       propertyPath: trophyLocaction
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 7126904735700718222, guid: 42f2fa56a79b12344bcf38daf318a786, type: 3}
+      propertyPath: art
+      value: 
+      objectReference: {fileID: 1695284086094638720, guid: 62a81d0730acec74081a428108a6e3c6, type: 3}
+    - target: {fileID: 7126904735700718222, guid: 42f2fa56a79b12344bcf38daf318a786, type: 3}
+      propertyPath: artLocation
+      value: 
+      objectReference: {fileID: 1596450670}
     - target: {fileID: 7126904735700718222, guid: 42f2fa56a79b12344bcf38daf318a786, type: 3}
       propertyPath: trophyLocaction
       value: 
@@ -915,9 +979,25 @@ PrefabInstance:
       value: BuildingGroundRight
       objectReference: {fileID: 0}
     - target: {fileID: 7108745744701841361, guid: 42f2fa56a79b12344bcf38daf318a786, type: 3}
+      propertyPath: art
+      value: 
+      objectReference: {fileID: 1695284086094638720, guid: 62a81d0730acec74081a428108a6e3c6, type: 3}
+    - target: {fileID: 7108745744701841361, guid: 42f2fa56a79b12344bcf38daf318a786, type: 3}
+      propertyPath: artLocation
+      value: 
+      objectReference: {fileID: 1596450670}
+    - target: {fileID: 7108745744701841361, guid: 42f2fa56a79b12344bcf38daf318a786, type: 3}
       propertyPath: trophyLocation
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 7126904735700718222, guid: 42f2fa56a79b12344bcf38daf318a786, type: 3}
+      propertyPath: art
+      value: 
+      objectReference: {fileID: 1695284086094638720, guid: 62a81d0730acec74081a428108a6e3c6, type: 3}
+    - target: {fileID: 7126904735700718222, guid: 42f2fa56a79b12344bcf38daf318a786, type: 3}
+      propertyPath: artLocation
+      value: 
+      objectReference: {fileID: 1596450670}
     - target: {fileID: 7126904735700718222, guid: 42f2fa56a79b12344bcf38daf318a786, type: 3}
       propertyPath: trophyLocation
       value: 
@@ -985,9 +1065,25 @@ PrefabInstance:
       value: BuildingGroundLeft
       objectReference: {fileID: 0}
     - target: {fileID: 7108745744701841361, guid: 42f2fa56a79b12344bcf38daf318a786, type: 3}
+      propertyPath: art
+      value: 
+      objectReference: {fileID: 1695284086094638720, guid: 62a81d0730acec74081a428108a6e3c6, type: 3}
+    - target: {fileID: 7108745744701841361, guid: 42f2fa56a79b12344bcf38daf318a786, type: 3}
+      propertyPath: artLocation
+      value: 
+      objectReference: {fileID: 1596450670}
+    - target: {fileID: 7108745744701841361, guid: 42f2fa56a79b12344bcf38daf318a786, type: 3}
       propertyPath: trophyLocation
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 7126904735700718222, guid: 42f2fa56a79b12344bcf38daf318a786, type: 3}
+      propertyPath: art
+      value: 
+      objectReference: {fileID: 1695284086094638720, guid: 62a81d0730acec74081a428108a6e3c6, type: 3}
+    - target: {fileID: 7126904735700718222, guid: 42f2fa56a79b12344bcf38daf318a786, type: 3}
+      propertyPath: artLocation
+      value: 
+      objectReference: {fileID: 1596450670}
     - target: {fileID: 7126904735700718222, guid: 42f2fa56a79b12344bcf38daf318a786, type: 3}
       propertyPath: trophyLocation
       value: 
@@ -1062,7 +1158,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.13231933, y: -0.39293003}
+  m_Offset: {x: 0.5012663, y: -0.41673315}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1073,7 +1169,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.54613805, y: 5.827428}
+  m_Size: {x: 0.56994116, y: 5.7798214}
   m_EdgeRadius: 0
 --- !u!114 &656079176
 MonoBehaviour:
@@ -1276,9 +1372,25 @@ PrefabInstance:
       value: BuildingSlab (3)
       objectReference: {fileID: 0}
     - target: {fileID: 7108745744701841361, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
+      propertyPath: art
+      value: 
+      objectReference: {fileID: 1695284086094638720, guid: 62a81d0730acec74081a428108a6e3c6, type: 3}
+    - target: {fileID: 7108745744701841361, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
+      propertyPath: artLocation
+      value: 
+      objectReference: {fileID: 1596450670}
+    - target: {fileID: 7108745744701841361, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
       propertyPath: trophyLocaction
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 7126904735700718222, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
+      propertyPath: art
+      value: 
+      objectReference: {fileID: 1695284086094638720, guid: 62a81d0730acec74081a428108a6e3c6, type: 3}
+    - target: {fileID: 7126904735700718222, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
+      propertyPath: artLocation
+      value: 
+      objectReference: {fileID: 1596450670}
     - target: {fileID: 7126904735700718222, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
       propertyPath: trophyLocaction
       value: 
@@ -1697,7 +1809,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.2584684, y: -0.39293003}
+  m_Offset: {x: -0.11047864, y: -0.42863452}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1708,7 +1820,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.48306322, y: 5.827428}
+  m_Size: {x: 0.6496844, y: 5.7560186}
   m_EdgeRadius: 0
 --- !u!114 &1200001273
 MonoBehaviour:
@@ -2003,7 +2115,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.17962515, y: -0.056132674}
+  m_Offset: {x: -0.11791253, y: -0.056132793}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2014,7 +2126,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6407497, y: 6.5010223}
+  m_Size: {x: 0.61694765, y: 6.5010223}
   m_EdgeRadius: 0
 --- !u!114 &1402371409
 MonoBehaviour:
@@ -2431,9 +2543,25 @@ PrefabInstance:
       value: BuildingSlab (2)
       objectReference: {fileID: 0}
     - target: {fileID: 7108745744701841361, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
+      propertyPath: art
+      value: 
+      objectReference: {fileID: 1695284086094638720, guid: 62a81d0730acec74081a428108a6e3c6, type: 3}
+    - target: {fileID: 7108745744701841361, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
+      propertyPath: artLocation
+      value: 
+      objectReference: {fileID: 1596450670}
+    - target: {fileID: 7108745744701841361, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
       propertyPath: trophyLocaction
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 7126904735700718222, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
+      propertyPath: art
+      value: 
+      objectReference: {fileID: 1695284086094638720, guid: 62a81d0730acec74081a428108a6e3c6, type: 3}
+    - target: {fileID: 7126904735700718222, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
+      propertyPath: artLocation
+      value: 
+      objectReference: {fileID: 1596450670}
     - target: {fileID: 7126904735700718222, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
       propertyPath: trophyLocaction
       value: 
@@ -2518,7 +2646,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.17962515, y: -0.06735933}
+  m_Offset: {x: 0.42955732, y: -0.06735945}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2529,7 +2657,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6407497, y: 6.478569}
+  m_Size: {x: 0.6169462, y: 6.478569}
   m_EdgeRadius: 0
 --- !u!114 &1750712022
 MonoBehaviour:
@@ -2682,9 +2810,25 @@ PrefabInstance:
       value: GroundMiddle
       objectReference: {fileID: 0}
     - target: {fileID: 7108745744701841361, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
+      propertyPath: art
+      value: 
+      objectReference: {fileID: 1695284086094638720, guid: 62a81d0730acec74081a428108a6e3c6, type: 3}
+    - target: {fileID: 7108745744701841361, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
+      propertyPath: artLocation
+      value: 
+      objectReference: {fileID: 1596450670}
+    - target: {fileID: 7108745744701841361, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
       propertyPath: trophyLocaction
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 7126904735700718222, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
+      propertyPath: art
+      value: 
+      objectReference: {fileID: 1695284086094638720, guid: 62a81d0730acec74081a428108a6e3c6, type: 3}
+    - target: {fileID: 7126904735700718222, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
+      propertyPath: artLocation
+      value: 
+      objectReference: {fileID: 1596450670}
     - target: {fileID: 7126904735700718222, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
       propertyPath: trophyLocaction
       value: 
@@ -2848,9 +2992,25 @@ PrefabInstance:
       value: BuildingSlab (7)
       objectReference: {fileID: 0}
     - target: {fileID: 7108745744701841361, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
+      propertyPath: art
+      value: 
+      objectReference: {fileID: 1695284086094638720, guid: 62a81d0730acec74081a428108a6e3c6, type: 3}
+    - target: {fileID: 7108745744701841361, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
+      propertyPath: artLocation
+      value: 
+      objectReference: {fileID: 1596450670}
+    - target: {fileID: 7108745744701841361, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
       propertyPath: trophyLocation
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 7126904735700718222, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
+      propertyPath: art
+      value: 
+      objectReference: {fileID: 1695284086094638720, guid: 62a81d0730acec74081a428108a6e3c6, type: 3}
+    - target: {fileID: 7126904735700718222, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
+      propertyPath: artLocation
+      value: 
+      objectReference: {fileID: 1596450670}
     - target: {fileID: 7126904735700718222, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
       propertyPath: trophyLocation
       value: 
@@ -2925,7 +3085,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.17962515, y: -0.06735933}
+  m_Offset: {x: 0.33434486, y: -0.06735945}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2936,7 +3096,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6407497, y: 6.478569}
+  m_Size: {x: 0.6169472, y: 6.478569}
   m_EdgeRadius: 0
 --- !u!114 &1951268654
 MonoBehaviour:
@@ -3015,7 +3175,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.17962515, y: -0.056132674}
+  m_Offset: {x: -0.07030678, y: -0.056132793}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -3026,7 +3186,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6407497, y: 6.5010223}
+  m_Size: {x: 0.5693407, y: 6.5010223}
   m_EdgeRadius: 0
 --- !u!114 &2015096038
 MonoBehaviour:
@@ -3200,9 +3360,25 @@ PrefabInstance:
       value: BuildingSlab (9)
       objectReference: {fileID: 0}
     - target: {fileID: 7108745744701841361, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
+      propertyPath: art
+      value: 
+      objectReference: {fileID: 1695284086094638720, guid: 62a81d0730acec74081a428108a6e3c6, type: 3}
+    - target: {fileID: 7108745744701841361, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
+      propertyPath: artLocation
+      value: 
+      objectReference: {fileID: 1596450670}
+    - target: {fileID: 7108745744701841361, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
       propertyPath: trophyLocation
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 7126904735700718222, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
+      propertyPath: art
+      value: 
+      objectReference: {fileID: 1695284086094638720, guid: 62a81d0730acec74081a428108a6e3c6, type: 3}
+    - target: {fileID: 7126904735700718222, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
+      propertyPath: artLocation
+      value: 
+      objectReference: {fileID: 1596450670}
     - target: {fileID: 7126904735700718222, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
       propertyPath: trophyLocation
       value: 
@@ -3309,9 +3485,25 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7108745744701841361, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
+      propertyPath: art
+      value: 
+      objectReference: {fileID: 1695284086094638720, guid: 62a81d0730acec74081a428108a6e3c6, type: 3}
+    - target: {fileID: 7108745744701841361, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
+      propertyPath: artLocation
+      value: 
+      objectReference: {fileID: 1596450670}
+    - target: {fileID: 7108745744701841361, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
       propertyPath: trophyLocation
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 7126904735700718222, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
+      propertyPath: art
+      value: 
+      objectReference: {fileID: 1695284086094638720, guid: 62a81d0730acec74081a428108a6e3c6, type: 3}
+    - target: {fileID: 7126904735700718222, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
+      propertyPath: artLocation
+      value: 
+      objectReference: {fileID: 1596450670}
     - target: {fileID: 7126904735700718222, guid: 9de06d6ff85441b46956c54d281c08fb, type: 3}
       propertyPath: trophyLocation
       value: 

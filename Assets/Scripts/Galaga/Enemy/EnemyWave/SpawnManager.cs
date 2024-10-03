@@ -16,6 +16,8 @@ public class SpawnManager : MonoBehaviour
 
     public static SpawnManager Instance;
 
+    private AudioManager audioManager;
+
     private void Awake()
     {
         if (Instance == null)
@@ -26,6 +28,7 @@ public class SpawnManager : MonoBehaviour
 
     private void Start()
     {
+        audioManager = FindObjectOfType<AudioManager>();
         for (int i = 0; i < maxEnemyCountOnScreen; i++)
         {
             //spawn enemy until 15 of those die
@@ -71,6 +74,7 @@ public class SpawnManager : MonoBehaviour
         {
             //load new scene when 15 enemies are killed
             SceneManager.LoadScene("EnemyWave2");
+            audioManager.PlaySFX(audioManager.LevelChange);
         }
         else
         {

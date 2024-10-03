@@ -5,7 +5,13 @@ using UnityEngine;
 public class EnemyBullet : MonoBehaviour
 {
     [SerializeField] private float moveSpeed;
-    
+    private AudioManager audioManager;
+
+    private void Start()
+    {
+        audioManager = FindObjectOfType<AudioManager>();
+    }
+
     void Update()
     {
         transform.Translate(Vector2.down * moveSpeed * Time.deltaTime);
@@ -19,8 +25,10 @@ public class EnemyBullet : MonoBehaviour
     {
         if (collision.gameObject.GetComponent<IPlayer>() != null)
         {
+            Debug.Log("Enemy FOundddddddddddd!!!!!");
             collision.gameObject.GetComponent<IPlayer>().GetDamage();
             Destroy(gameObject);
+            audioManager.PlaySFX(audioManager.PlayerHit);
         }
         if (collision.gameObject.tag == "Boundary")
         {

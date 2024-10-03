@@ -13,6 +13,8 @@ public class MiniEnemy : MonoBehaviour, IEnemy
     private float randomSpeed;
     private Vector3 targetPosition;
     private Coroutine shootCoroutine;
+
+    private AudioManager audioManager;
     public void Initialize(Transform[] spawnPoints, Transform player)
     {
         // referencing this from spawn manager since we cannot reference it through a prefab
@@ -27,6 +29,7 @@ public class MiniEnemy : MonoBehaviour, IEnemy
     private void Start()
     {
         targetPosition = new Vector3(player.position.x, transform.position.y - 1f, 0);
+        audioManager = FindObjectOfType<AudioManager>();
     }
     private void Update()
     {
@@ -113,6 +116,7 @@ public class MiniEnemy : MonoBehaviour, IEnemy
         GameObject explosion = Instantiate(EnemyObject.ExplosionPrefab, transform.position, Quaternion.identity);
         Destroy(explosion, 1f);
         DestroyEnemy();
+        audioManager.PlaySFX(audioManager.Explosion);
     }
     
 }

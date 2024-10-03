@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MovementGalaga : MonoBehaviour, IPlayer
@@ -13,12 +14,14 @@ public class MovementGalaga : MonoBehaviour, IPlayer
     [SerializeField] private int playerLives = 3;
     [SerializeField] private Image[] livesUI;
 
+    private AudioManager audioManager;
 
     // Start is called before the first frame update
     void Awake()
     {
         galagaPlayerInput = new GalagaPlayerInput();
         rb = GetComponent<Rigidbody2D>();
+        audioManager = FindObjectOfType<AudioManager>();
     }
 
     // Update is called once per frame
@@ -30,6 +33,7 @@ public class MovementGalaga : MonoBehaviour, IPlayer
     private void OnShoot()
     {
         Instantiate(playerBullet, transform.position, Quaternion.identity);
+        audioManager.PlaySFX(audioManager.PlayerShoot);
     }
     public void GetDamage()
     {
@@ -53,6 +57,8 @@ public class MovementGalaga : MonoBehaviour, IPlayer
         if(playerLives <= 0)
         {
             Destroy(gameObject);
+            SceneManager.LoadScene("EnemyTest");
+            audioManager.PlaySFX(audioManager.PlayerDie);
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)

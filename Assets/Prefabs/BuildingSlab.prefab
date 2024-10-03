@@ -341,8 +341,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: DamagedBuilding_Sprite (4)
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 3283037540951390652, guid: fdefc0ca9ccca484bb19c5cb5049c539, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

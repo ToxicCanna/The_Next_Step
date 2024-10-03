@@ -6,12 +6,11 @@ public class MeleeHitbox : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.TryGetComponent<IDestroy>(out var destroyable))
+        IDestroy destroy = other.gameObject.GetComponent<IDestroy>();
+        if (destroy != null)
         {
             Debug.Log("Hit: " + other.gameObject.name);
-            destroyable.GetDamage();
-
-            Destroy(gameObject);
+            destroy.GetDamage();
         }
     }
 }

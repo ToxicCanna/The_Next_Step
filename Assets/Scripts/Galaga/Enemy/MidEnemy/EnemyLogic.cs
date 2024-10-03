@@ -8,9 +8,11 @@ public class EnemyLogic : MonoBehaviour, IEnemy
     [SerializeField] private EnemyObject EnemyObject;
     private float bulletTimer;
     private static int enemyCount = 0;
-
+    [SerializeField] private Transform bulletSpawn;
+    [SerializeField] Animator anim;
     void Start()
     {
+        anim = GetComponent<Animator>();
         bulletTimer = Random.Range(EnemyObject.MinShootInterval, EnemyObject.MaxShootInterval);
     }
 
@@ -22,7 +24,7 @@ public class EnemyLogic : MonoBehaviour, IEnemy
     public void GetDamage()
     {
         //EnemyObject.EnemyCount--;
-        GameObject explosion = Instantiate(EnemyObject.ExplosionPrefab, transform.position, Quaternion.identity);
+        GameObject explosion = Instantiate(EnemyObject.ExplosionPrefab, bulletSpawn.position, Quaternion.identity);
         Destroy(explosion, 1f);
         DestroyEnemy();
         
@@ -51,7 +53,13 @@ public class EnemyLogic : MonoBehaviour, IEnemy
 
     public void Shoot()
     {
-        
+        bulletTimer -= Time.deltaTime;
+        if (bulletTimer <= 0)
+        {
+            Instantiate(EnemyObject.BulletPrefab, transform.position, Quaternion.identity);
+            bulletTimer = Random.Range(EnemyObject.MinShootInterval, EnemyObject.MaxShootInterval);
+            anim.SetTrigger("IsAttacking");
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

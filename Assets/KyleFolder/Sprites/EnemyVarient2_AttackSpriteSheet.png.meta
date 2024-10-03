@@ -124,8 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b3c4e367a994464cb1e4d8b3df09397
-      internalID: 906164201
+      spriteID: 5caf0d95eea6caa43a07e83690c3dfcc
+      internalID: -1481089143
       vertices: []
       indices: 
       edges: []
@@ -145,8 +145,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 223322d6afd71384b9b60c8325c99464
-      internalID: 825854413
+      spriteID: 885d274dd002a9c4a9ad9805684d35dc
+      internalID: 986735993
       vertices: []
       indices: 
       edges: []
@@ -166,8 +166,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b4919ea2e9bca9c468929afe86a28038
-      internalID: 2010038583
+      spriteID: dc49b744750fd0c43b60bc352cd678cf
+      internalID: 2117659731
       vertices: []
       indices: 
       edges: []
@@ -183,9 +183,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      EnemyVarient2_AttackSpriteSheet_0: 906164201
-      EnemyVarient2_AttackSpriteSheet_1: 825854413
-      EnemyVarient2_AttackSpriteSheet_2: 2010038583
+      EnemyVarient2_AttackSpriteSheet_0: -1481089143
+      EnemyVarient2_AttackSpriteSheet_1: 986735993
+      EnemyVarient2_AttackSpriteSheet_2: 2117659731
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

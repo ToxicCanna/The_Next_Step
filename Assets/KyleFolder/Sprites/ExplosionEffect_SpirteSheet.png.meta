@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 448b623b48d488d499c4824d8da4d5f3
+guid: 2f572ba92c5c7604ca7b290b5b21f802
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -124,8 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e97a4a0c0102f34cb64a657567741a4
-      internalID: 2029828344
+      spriteID: d4011355d8899224290c170d67610f9d
+      internalID: 765295416
       vertices: []
       indices: 
       edges: []
@@ -145,8 +145,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cfb9e90a2eb89e245a3266fc4ca75841
-      internalID: -1016323053
+      spriteID: 3642a865a6edd144a814bb193c71c16d
+      internalID: 1511983204
       vertices: []
       indices: 
       edges: []
@@ -166,8 +166,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d5301baef949324788ba153393fef66
-      internalID: -1054992115
+      spriteID: 8625ee652133c4942a0e7b791d44a983
+      internalID: -432933471
       vertices: []
       indices: 
       edges: []
@@ -183,9 +183,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ExplosionEffect_SpirteSheet_0: 2029828344
-      ExplosionEffect_SpirteSheet_1: -1016323053
-      ExplosionEffect_SpirteSheet_2: -1054992115
+      ExplosionEffect_SpirteSheet_0: 765295416
+      ExplosionEffect_SpirteSheet_1: 1511983204
+      ExplosionEffect_SpirteSheet_2: -432933471
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c7219059ee8232488dfe606601f9436, type: 3}
+  m_Name: MidEnemy1
+  m_EditorClassIdentifier: 
+  MaxMoveSpeed: 0
+  MinMoveSpeed: 1.5
+  EnemyType: {fileID: 6691844554378512629, guid: ad0c0c378dcd1214091f73bdbc853256, type: 3}
+  MinShootInterval: 3
+  MaxShootInterval: 4
+  ShootingRange: 0
+  BulletPrefab: {fileID: 6587301993898259099, guid: e28ec2cc901e8284b831520c2a95616a, type: 3}
+  ExplosionPrefab: {fileID: 3878268704232752932, guid: 70b887024784ecc4e9b8b59c0cee3f89, type: 3}

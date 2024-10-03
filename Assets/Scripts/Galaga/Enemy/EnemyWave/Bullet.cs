@@ -14,9 +14,17 @@ public class Bullet : MonoBehaviour
     {
         // Move the bullet down
         transform.position += Vector3.down * bulletSpeed * Time.deltaTime;
+       
+    }
 
-        // Destroy the bullet if it goes off-screen
-        if (transform.position.y < Camera.main.ScreenToWorldPoint(new Vector3(0, 0, 0)).y)
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.GetComponent<IPlayer>() != null)
+        {
+            collision.gameObject.GetComponent<IPlayer>().GetDamage();
+            Destroy(gameObject);
+        }
+        if (collision.gameObject.tag == "Boundary")
         {
             Destroy(gameObject);
         }

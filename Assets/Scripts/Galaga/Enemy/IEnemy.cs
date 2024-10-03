@@ -4,4 +4,5 @@ public interface IEnemy
     void Respawn();
     void Shoot();
     void DestroyEnemy();
+    void GetDamage();
 }

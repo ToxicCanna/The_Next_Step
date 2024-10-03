@@ -57,7 +57,7 @@ public class MovementGalaga : MonoBehaviour, IPlayer
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.GetComponent<IShootable>() != null)
+        if (collision.gameObject.GetComponent<IEnemy>() != null)
         {
             LoseLife();
         }

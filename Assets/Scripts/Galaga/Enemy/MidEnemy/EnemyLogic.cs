@@ -51,12 +51,7 @@ public class EnemyLogic : MonoBehaviour, IEnemy
 
     public void Shoot()
     {
-        bulletTimer -= Time.deltaTime;
-        if (bulletTimer <= 0)
-        {
-            Instantiate(EnemyObject.BulletPrefab, transform.position, Quaternion.identity);
-            bulletTimer = Random.Range(EnemyObject.MinShootInterval, EnemyObject.MaxShootInterval);
-        }
+        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

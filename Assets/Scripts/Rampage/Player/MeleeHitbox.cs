@@ -8,9 +8,8 @@ public class MeleeHitbox : MonoBehaviour
     {
         if (other.TryGetComponent<IDestroy>(out var destroyable))
         {
+            Debug.Log("Hit: " + other.gameObject.name);
             destroyable.GetDamage();
-
-            destroyable.Destroy();
 
             Destroy(gameObject);
         }

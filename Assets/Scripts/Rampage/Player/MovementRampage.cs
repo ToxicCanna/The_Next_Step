@@ -12,12 +12,14 @@ public class MovementRampage : MonoBehaviour, IPlayer
     [SerializeField] private int playerLives = 3;
     [SerializeField] private Image[] livesUI;
     [SerializeField] private GameObject meleeHitboxPrefab;
+    private ScoreManager scoreManager;
 
     // Start is called before the first frame update
     void Awake()
     {
         rampagePlayerInput = new RampagePlayerInput();
         rb = GetComponent<Rigidbody2D>();
+        scoreManager = GameObject.Find("ScoreManager").GetComponent<ScoreManager>();
     }
 
     // Update is called once per frame
@@ -35,6 +37,11 @@ public class MovementRampage : MonoBehaviour, IPlayer
     public void GetDamage()
     {
         LoseLife();
+    }
+    public void Collect()
+    {
+        Debug.Log("collected");
+        scoreManager.UpdateScore(500);
     }
     private void LoseLife()
     {

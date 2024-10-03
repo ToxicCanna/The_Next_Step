@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2691758172849990236}
-  - component: {fileID: 2828207530344681635}
   - component: {fileID: 1118321125199299452}
   m_Layer: 0
   m_Name: Destroy
@@ -33,19 +32,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 3003529315890594645}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2828207530344681635
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 774325010798258068}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b56e2e03e0c5b614fac3e4593d5353da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 3
 --- !u!61 &1118321125199299452
 BoxCollider2D:
   m_ObjectHideFlags: 0

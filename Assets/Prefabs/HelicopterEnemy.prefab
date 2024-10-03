@@ -145,6 +145,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnemyObject: {fileID: 11400000, guid: 56050178ce44c7f4f84804d0b4f09d47, type: 2}
+  bulletSpawn: {fileID: 0}
+  anim: {fileID: 0}
 --- !u!95 &1974309993410912439
 Animator:
   serializedVersion: 5

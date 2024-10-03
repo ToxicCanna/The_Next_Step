@@ -112,7 +112,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7730014194759139794, guid: 58273a96f8eedd94aadde61be9080b19, type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8399158333812117906, guid: 58273a96f8eedd94aadde61be9080b19, type: 3}
       propertyPath: m_SortingOrder
@@ -126,28 +126,8 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: 128201869697537210, guid: 58273a96f8eedd94aadde61be9080b19, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6523491139911881878, guid: 58273a96f8eedd94aadde61be9080b19, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 4223957328978782835}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 58273a96f8eedd94aadde61be9080b19, type: 3}
---- !u!1 &1728797158504819076 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6523491139911881878, guid: 58273a96f8eedd94aadde61be9080b19, type: 3}
-  m_PrefabInstance: {fileID: 5581635026303941906}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &4223957328978782835
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1728797158504819076}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b56e2e03e0c5b614fac3e4593d5353da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &7267506344898920007 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3003529315890594645, guid: 58273a96f8eedd94aadde61be9080b19, type: 3}
@@ -175,15 +155,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1992437679773537716, guid: 4978c3d03af1a5b499b2e99e042e3052, type: 3}
       propertyPath: m_Size.x
-      value: 2.5
+      value: 1.6654387
       objectReference: {fileID: 0}
     - target: {fileID: 1992437679773537716, guid: 4978c3d03af1a5b499b2e99e042e3052, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1992437679773537716, guid: 4978c3d03af1a5b499b2e99e042e3052, type: 3}
       propertyPath: m_Offset.x
-      value: 0
+      value: 0.80674267
       objectReference: {fileID: 0}
     - target: {fileID: 2758377983026500047, guid: 4978c3d03af1a5b499b2e99e042e3052, type: 3}
       propertyPath: m_Enabled

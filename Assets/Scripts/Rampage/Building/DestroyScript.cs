@@ -26,8 +26,7 @@ public class DestroyScript : MonoBehaviour, IDestroy
     {
         if (collision.gameObject.GetComponent<IHitbox>() != null)
         {
-            GetDamage();
-            //Destroy(gameObject);
+            //GetDamage();
         }
     }
 }

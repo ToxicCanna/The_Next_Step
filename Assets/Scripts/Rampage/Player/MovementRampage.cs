@@ -15,6 +15,7 @@ public class MovementRampage : MonoBehaviour, IPlayer
     private ScoreManager scoreManager;
     [SerializeField] Animator anim;
 
+    private Vector2 moveInput;
 
     // Start is called before the first frame update
     void Awake()
@@ -23,10 +24,15 @@ public class MovementRampage : MonoBehaviour, IPlayer
         rb = GetComponent<Rigidbody2D>();
         scoreManager = GameObject.Find("ScoreManager").GetComponent<ScoreManager>();
     }
+    private void Update()
+    {
+        FlipSprite();
+    }
 
     // Update is called once per frame
     private void OnGroundMove(InputValue inputValue)
     {
+        moveInput = inputValue.Get<Vector2>();
         rb.velocity = inputValue.Get<Vector2>() * moveSpeed;
     }
 
@@ -65,6 +71,19 @@ public class MovementRampage : MonoBehaviour, IPlayer
         if (playerLives <= 0)
         {
             Destroy(gameObject);
+        }
+    }
+    private void FlipSprite()
+    {
+        if (moveInput.x > 0)
+        {
+            // Facing right
+            transform.localScale = new Vector3(1, 1, 1);
+        }
+        else if (moveInput.x < 0)
+        {
+            // Facing left
+            transform.localScale = new Vector3(-1, 1, 1);
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)

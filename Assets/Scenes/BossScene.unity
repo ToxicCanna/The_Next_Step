@@ -1401,15 +1401,15 @@ PrefabInstance:
     - target: {fileID: 4750339110183617228, guid: 3187c84d176cd5f459ef06c0656d384e, type: 3}
       propertyPath: livesUI.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2137851802}
     - target: {fileID: 4750339110183617228, guid: 3187c84d176cd5f459ef06c0656d384e, type: 3}
       propertyPath: livesUI.Array.data[1]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 807611256}
     - target: {fileID: 4750339110183617228, guid: 3187c84d176cd5f459ef06c0656d384e, type: 3}
       propertyPath: livesUI.Array.data[2]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 255900520}
     - target: {fileID: 7979201766429877748, guid: 3187c84d176cd5f459ef06c0656d384e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

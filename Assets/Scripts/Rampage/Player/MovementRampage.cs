@@ -53,6 +53,11 @@ public class MovementRampage : MonoBehaviour, IPlayer
         Debug.Log("collected");
         scoreManager.UpdateScore(500);
     }
+    public void Score()
+    {
+        Debug.Log("Destroyed");
+        scoreManager.UpdateScore(250);
+    }
     private void LoseLife()
     {
         for (int i = 0; i < livesUI.Length; i++)
@@ -66,7 +71,7 @@ public class MovementRampage : MonoBehaviour, IPlayer
                 livesUI[i].enabled = false;
             }
         }
-        playerLives -= 1;
+        playerLives--;
         Debug.Log($"Lives = {playerLives}");
         if (playerLives <= 0)
         {
@@ -86,11 +91,32 @@ public class MovementRampage : MonoBehaviour, IPlayer
             transform.localScale = new Vector3(-1, 1, 1);
         }
     }
+    private void Climb()
+    {
+        rb.gravityScale = 0;
+        rb.constraints = RigidbodyConstraints2D.None; // Unfreeze Y position
+        rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+    }
+    private void UnfreezePositionY()
+    {
+        rb.gravityScale = 1;
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.GetComponent<IEnemy>() != null)
         {
             LoseLife();
+        }
+        if (collision.gameObject.GetComponent<IClimb>() != null)
+        {
+            Climb();
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.GetComponent<IClimb>() != null)
+        {
+            UnfreezePositionY();
         }
     }
 }

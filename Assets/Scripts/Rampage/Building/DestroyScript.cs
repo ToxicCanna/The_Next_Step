@@ -5,6 +5,7 @@ using UnityEngine;
 public class DestroyScript : MonoBehaviour, IDestroy
 {
     [SerializeField] private int health = 3;
+    [SerializeField] GameObject player;
     public void GetDamage()
     {
         health--; // Decrease health by 1
@@ -18,15 +19,13 @@ public class DestroyScript : MonoBehaviour, IDestroy
     public void Destroy()
     {
         Debug.Log($"{gameObject.name} is destroyed!");
-        //animations, effects, etc.
 
         Destroy(gameObject);
+
+        player.GetComponent<MovementRampage>().Score();
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void AddScore()
     {
-        if (collision.gameObject.GetComponent<IHitbox>() != null)
-        {
-            //GetDamage();
-        }
+        player.GetComponent<MovementRampage>().Score();
     }
 }

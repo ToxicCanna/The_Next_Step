@@ -1095,6 +1095,7 @@ GameObject:
   m_Component:
   - component: {fileID: 656079174}
   - component: {fileID: 656079175}
+  - component: {fileID: 656079176}
   m_Layer: 0
   m_Name: ClimbTrigger
   m_TagString: Untagged
@@ -1149,7 +1150,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.17962515, y: -0.39293003}
+  m_Offset: {x: 0.13231933, y: -0.39293003}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1160,8 +1161,20 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6407497, y: 5.827428}
+  m_Size: {x: 0.54613805, y: 5.827428}
   m_EdgeRadius: 0
+--- !u!114 &656079176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 656079173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d69c5748e91fe042ae121353ede9192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &740556562
 GameObject:
   m_ObjectHideFlags: 0
@@ -1710,6 +1723,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1200001271}
   - component: {fileID: 1200001272}
+  - component: {fileID: 1200001273}
   m_Layer: 0
   m_Name: ClimbTrigger (1)
   m_TagString: Untagged
@@ -1764,7 +1778,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.17962515, y: -0.39293003}
+  m_Offset: {x: 0.2584684, y: -0.39293003}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1775,8 +1789,20 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6407497, y: 5.827428}
+  m_Size: {x: 0.48306322, y: 5.827428}
   m_EdgeRadius: 0
+--- !u!114 &1200001273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1200001270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d69c5748e91fe042ae121353ede9192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1316757855
 GameObject:
   m_ObjectHideFlags: 0
@@ -2003,6 +2029,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1402371407}
   - component: {fileID: 1402371408}
+  - component: {fileID: 1402371409}
   m_Layer: 0
   m_Name: ClimbTrigger (3)
   m_TagString: Untagged
@@ -2070,6 +2097,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.6407497, y: 6.5010223}
   m_EdgeRadius: 0
+--- !u!114 &1402371409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402371406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d69c5748e91fe042ae121353ede9192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1565692389
 GameObject:
   m_ObjectHideFlags: 0
@@ -2466,6 +2505,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1750712020}
   - component: {fileID: 1750712021}
+  - component: {fileID: 1750712022}
   m_Layer: 0
   m_Name: ClimbTrigger (4)
   m_TagString: Untagged
@@ -2533,6 +2573,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.6407497, y: 6.478569}
   m_EdgeRadius: 0
+--- !u!114 &1750712022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1750712019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d69c5748e91fe042ae121353ede9192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1795159700
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2816,6 +2868,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1951268652}
   - component: {fileID: 1951268653}
+  - component: {fileID: 1951268654}
   m_Layer: 0
   m_Name: ClimbTrigger (2)
   m_TagString: Untagged
@@ -2883,6 +2936,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.6407497, y: 6.478569}
   m_EdgeRadius: 0
+--- !u!114 &1951268654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1951268651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d69c5748e91fe042ae121353ede9192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2015096035
 GameObject:
   m_ObjectHideFlags: 0
@@ -2893,6 +2958,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2015096036}
   - component: {fileID: 2015096037}
+  - component: {fileID: 2015096038}
   m_Layer: 0
   m_Name: ClimbTrigger (5)
   m_TagString: Untagged
@@ -2960,6 +3026,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.6407497, y: 6.5010223}
   m_EdgeRadius: 0
+--- !u!114 &2015096038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2015096035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d69c5748e91fe042ae121353ede9192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2062848197
 GameObject:
   m_ObjectHideFlags: 0
@@ -3243,7 +3321,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1233618733554108702, guid: f5a28576a5dfb0543ac64644f3d32411, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.1
+      value: -4.61
       objectReference: {fileID: 0}
     - target: {fileID: 1233618733554108702, guid: f5a28576a5dfb0543ac64644f3d32411, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3287,7 +3365,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1676807691875029193, guid: f5a28576a5dfb0543ac64644f3d32411, type: 3}
       propertyPath: m_Constraints
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1676807691875029193, guid: f5a28576a5dfb0543ac64644f3d32411, type: 3}
       propertyPath: m_GravityScale

@@ -17,6 +17,7 @@ public class EnemyLogic : MonoBehaviour, IEnemy
         anim = GetComponent<Animator>();
         bulletTimer = Random.Range(EnemyObject.MinShootInterval, EnemyObject.MaxShootInterval);
         audioManager = FindObjectOfType<AudioManager>();
+        enemyCount = 0;
     }
 
     void Update()

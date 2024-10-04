@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3063796116136076064}
   - component: {fileID: 633155385862548911}
   - component: {fileID: 6069667855868869864}
+  - component: {fileID: 8513990181905373403}
   m_Layer: 0
   m_Name: SpaceEnemy2
   m_TagString: Enemy
@@ -145,6 +146,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnemyObject: {fileID: 11400000, guid: 56050178ce44c7f4f84804d0b4f09d47, type: 2}
+  bulletSpawn: {fileID: 0}
+  anim: {fileID: 0}
 --- !u!95 &6069667855868869864
 Animator:
   serializedVersion: 5
@@ -166,3 +169,30 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!50 &8513990181905373403
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4252726775453892323}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4

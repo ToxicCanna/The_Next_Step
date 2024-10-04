@@ -47,7 +47,7 @@ public class EnemyLogic : MonoBehaviour, IEnemy
     public void Move()
     {
         //constant movement
-        transform.Translate(Vector2.right * EnemyObject.MinMoveSpeed * Time.deltaTime);
+        //transform.Translate(Vector2.right * EnemyObject.MinMoveSpeed * Time.deltaTime);
     }
 
     public void Respawn()

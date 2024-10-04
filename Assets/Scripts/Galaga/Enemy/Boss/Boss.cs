@@ -18,6 +18,8 @@ public class Boss : MonoBehaviour, IEnemy
     private float bulletTimer;
     private bool isRotating;
 
+    private Collider2D enemycollider;
+
 
     [SerializeField] private int bossHealth = 30;
     [SerializeField] private Slider healthBar;
@@ -38,6 +40,8 @@ public class Boss : MonoBehaviour, IEnemy
 
         anim = GetComponent<Animator>();
         audioManager = GameObject.FindObjectOfType<AudioManager>();
+        enemycollider = GetComponent<Collider2D>();
+        enemycollider.enabled = true;
     }
 
     private void Update()
@@ -61,9 +65,22 @@ public class Boss : MonoBehaviour, IEnemy
     }
     public void DestroyEnemy()
     {
-        Destroy(gameObject);
+        //Destroy(gameObject);
         GameObject explosion = Instantiate(enemyObject.ExplosionPrefab, transform.position, Quaternion.identity);
         audioManager.PlaySFX(audioManager.LevelChange);
+        StartCoroutine(WaitAndWin());
+        enemycollider.enabled = false;
+    }
+    private IEnumerator WaitAndWin()
+    {
+        yield return new WaitForSeconds(3f); // Wait for 3 seconds
+        Debug.Log("waited");
+        Destroy(gameObject);
+
+        WinGame();
+    }
+    public void WinGame()
+    {
         SceneManager.LoadScene("Rampage_The_Next_Step_Game");
     }
 

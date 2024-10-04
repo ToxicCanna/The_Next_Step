@@ -3564,7 +3564,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1308636690900612030, guid: 3187c84d176cd5f459ef06c0656d384e, type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3006665517450346498, guid: 3187c84d176cd5f459ef06c0656d384e, type: 3}
       propertyPath: m_GravityScale
@@ -3678,3 +3678,4 @@ SceneRoots:
   - {fileID: 922768176}
   - {fileID: 67932670}
   - {fileID: 934936528}
+  - {fileID: 1951783354}

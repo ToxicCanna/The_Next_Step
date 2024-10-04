@@ -4,6 +4,7 @@ using TMPro;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using static UnityEditor.Timeline.TimelinePlaybackControls;
 
@@ -157,9 +158,6 @@ public class MovementRampage : MonoBehaviour, IPlayer
     }
     public void WinGame()
     {
-        Application.Quit();
-#if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false;
-#endif
+        SceneManager.LoadScene("EnemyTest");
     }
 }

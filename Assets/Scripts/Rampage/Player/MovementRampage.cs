@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
+using static UnityEditor.Timeline.TimelinePlaybackControls;
 
 public class MovementRampage : MonoBehaviour, IPlayer
 {
@@ -16,6 +18,8 @@ public class MovementRampage : MonoBehaviour, IPlayer
     private ScoreManager scoreManager;
     [SerializeField] Animator anim;
 
+    public TMP_Text winText;
+
     private Vector2 moveInput;
 
 
@@ -25,6 +29,12 @@ public class MovementRampage : MonoBehaviour, IPlayer
         rampagePlayerInput = new RampagePlayerInput();
         rb = GetComponent<Rigidbody2D>();
         scoreManager = GameObject.Find("ScoreManager").GetComponent<ScoreManager>();
+
+        winText = GameObject.Find("WinText").GetComponent<TMP_Text>();
+        if (winText != null)
+        {
+            winText.gameObject.SetActive(false); // Hide win text at the start
+        }
     }
     private void Update()
     {
@@ -36,6 +46,12 @@ public class MovementRampage : MonoBehaviour, IPlayer
     {
         moveInput = inputValue.Get<Vector2>();
         rb.velocity = inputValue.Get<Vector2>() * moveSpeed;
+
+        if (moveInput.y < 0) // Assuming "S" corresponds to downward movement
+        {
+            anim.SetTrigger("IsStomping");
+        }
+        
     }
 
     private void OnShoot()
@@ -59,6 +75,11 @@ public class MovementRampage : MonoBehaviour, IPlayer
     {
         Debug.Log("Trophy collected");
         scoreManager.UpdateScore(500);
+        if (winText != null)
+        {
+            winText.text = "You Win!";
+            winText.gameObject.SetActive(true);
+        }
         StartCoroutine(WaitAndWin());
     }
     public void Score()
@@ -131,7 +152,7 @@ public class MovementRampage : MonoBehaviour, IPlayer
     }
     private IEnumerator WaitAndWin()
     {
-        yield return new WaitForSeconds(2f); // Wait for 2 seconds
+        yield return new WaitForSeconds(4f); // Wait for 4 seconds
         WinGame();
     }
     public void WinGame()

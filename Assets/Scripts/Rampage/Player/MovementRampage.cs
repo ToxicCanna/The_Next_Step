@@ -17,6 +17,7 @@ public class MovementRampage : MonoBehaviour, IPlayer
     [SerializeField] private GameObject meleeHitboxPrefab;
     private ScoreManager scoreManager;
     [SerializeField] Animator anim;
+    [SerializeField] AudioManager audio;
 
     public TMP_Text winText;
 
@@ -29,7 +30,7 @@ public class MovementRampage : MonoBehaviour, IPlayer
         rampagePlayerInput = new RampagePlayerInput();
         rb = GetComponent<Rigidbody2D>();
         scoreManager = GameObject.Find("ScoreManager").GetComponent<ScoreManager>();
-
+        audio = FindObjectOfType<AudioManager>();
         winText = GameObject.Find("WinText").GetComponent<TMP_Text>();
         if (winText != null)
         {
@@ -60,6 +61,7 @@ public class MovementRampage : MonoBehaviour, IPlayer
 
         anim.SetTrigger("IsPunching");
 
+        audio.PlaySFX(audio.PlayerShoot);
         Destroy(hitbox, 0.1f);
     }
     public void GetDamage()

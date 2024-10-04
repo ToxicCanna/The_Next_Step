@@ -107,6 +107,7 @@ public class MovementRampage : MonoBehaviour, IPlayer
         if (playerLives <= 0)
         {
             Destroy(gameObject);
+            SceneManager.LoadScene("Title");
         }
     }
     private void FlipSprite()

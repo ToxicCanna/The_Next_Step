@@ -454,7 +454,7 @@ MonoBehaviour:
   PlayerHit: {fileID: 8300000, guid: 17e0dbba988ba9a4c9479a11f7857d01, type: 3}
   PlayerDie: {fileID: 8300000, guid: 77f48fd095c4bc74d9e364accb184502, type: 3}
   LevelChange: {fileID: 8300000, guid: 8cbb75dd75ef41e4687b2d52d0a09fd9, type: 3}
-  background: {fileID: 8300000, guid: 3d81d87d647dff94489ccc57882c96cd, type: 3}
+  background: {fileID: 8300000, guid: 6e5efd6f12c26a14080358c5344edd07, type: 3}
 --- !u!4 &207854791
 Transform:
   m_ObjectHideFlags: 0
@@ -718,7 +718,7 @@ Transform:
   m_GameObject: {fileID: 327657750}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.00000008940697, y: 0.13, z: 0}
+  m_LocalPosition: {x: 0.00000008940697, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -1680,7 +1680,7 @@ MonoBehaviour:
   PlayerHit: {fileID: 8300000, guid: 17e0dbba988ba9a4c9479a11f7857d01, type: 3}
   PlayerDie: {fileID: 8300000, guid: 77f48fd095c4bc74d9e364accb184502, type: 3}
   LevelChange: {fileID: 8300000, guid: 8cbb75dd75ef41e4687b2d52d0a09fd9, type: 3}
-  background: {fileID: 8300000, guid: 3d81d87d647dff94489ccc57882c96cd, type: 3}
+  background: {fileID: 8300000, guid: 242db099dd8da8242a74cb3a8336ad8d, type: 3}
 --- !u!4 &1619305539
 Transform:
   m_ObjectHideFlags: 0

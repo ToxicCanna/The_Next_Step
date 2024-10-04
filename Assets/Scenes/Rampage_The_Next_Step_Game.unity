@@ -451,7 +451,7 @@ MonoBehaviour:
   backgroundMusic: {fileID: 949910750}
   PlayerShoot: {fileID: 8300000, guid: f2e1cfef73ce2554c88a95318ceb30d1, type: 3}
   Explosion: {fileID: 8300000, guid: 1af7dc9df6ded7741a22e36b0f944418, type: 3}
-  PlayerHit: {fileID: 8300000, guid: 17e0dbba988ba9a4c9479a11f7857d01, type: 3}
+  PlayerHit: {fileID: 8300000, guid: f4707db98e2ab1a4ebd1aff012a64d58, type: 3}
   PlayerDie: {fileID: 8300000, guid: 77f48fd095c4bc74d9e364accb184502, type: 3}
   LevelChange: {fileID: 8300000, guid: 8cbb75dd75ef41e4687b2d52d0a09fd9, type: 3}
   background: {fileID: 8300000, guid: 6e5efd6f12c26a14080358c5344edd07, type: 3}
